@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>电影参考档案</title>
+<style>
+*{box-sizing:border-box}body{font:14px/1.6 system-ui,sans-serif;margin:0;color:#212725;background:#f3f5f4;letter-spacing:0}
+header,main{max-width:1320px;margin:auto;padding:20px}h1{font-size:24px;margin:0 0 8px}h2{font-size:17px;margin:0}p{margin:8px 0}a{color:#17654d}
+nav,.filters{display:flex;flex-wrap:wrap;gap:12px;align-items:end}label{display:grid;gap:3px}select,input{font:inherit;border:1px solid #bbc5c0;background:white;border-radius:3px;padding:7px;max-width:100%}
+.filters{padding:16px 0;border-block:1px solid #d2d8d4}#list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}article{border:1px solid #d1d8d4;border-radius:4px;background:white;overflow:hidden}
+.body{padding:12px}article img{width:100%;aspect-ratio:2.38;object-fit:contain;background:#171b19;display:block}article img.native-crop{aspect-ratio:1/2;max-height:540px;background:#e7ebe8}
+.meta{font-size:12px;color:#4c5d53;overflow-wrap:anywhere}.palette{display:flex;height:24px;margin:10px 0}.swatch{height:24px}.plots{display:grid;grid-template-columns:1fr 1fr;gap:5px}.plots canvas{width:100%;height:auto;aspect-ratio:3;display:block}
+summary{cursor:pointer;color:#17654d}button{border:1px solid #abc0b5;border-radius:3px;background:white;color:#214c3a;padding:7px 14px;font:inherit}footer{display:flex;align-items:center;justify-content:center;gap:20px;margin:24px 0}
+#total{font-variant-numeric:tabular-nums}table{width:100%;border-collapse:collapse;font-size:12px}td,th{text-align:left;border-bottom:1px solid #ddd;padding:5px}td:last-child{font-variant-numeric:tabular-nums}.note{border-left:3px solid #bd8722;padding-left:12px}.empty{padding:24px}.texture-links{display:flex;flex-wrap:wrap;gap:8px}
+@media(max-width:650px){#list{grid-template-columns:1fr}header,main{padding:12px}.filters{gap:8px}label{max-width:100%}input{width:100%}h1{font-size:21px}}
+</style>
+<header><h1>电影参考档案</h1><p id="edition"></p>
+<nav><a href="../data/archive/README.md">分类总索引</a><a href="crop-editions.md">小样证据与双版本</a><a href="library-retention.md">保留规范</a><a href="../data/film-library.json">全量 JSON</a><a href="../data/frame-index.csv">分类 CSV</a></nav>
+<p class="note">局部候选与纹理特征面积不是全帧真实语义像素占比。色卡图集中各格并不代表原场景的空间相邻。</p>
+<div class="filters">
+<label>检索<input id="search" type="search"></label>
+<label>范围<select id="storage"><option value="selected">代表场景</option><option value="all">全部帧</option><option value="text">其他场景</option></select></label>
+<label>视角<select id="viewpoint"></select></label><label>场景<select id="scene"></select></label><label>时段<select id="time"></select></label><label>材质<select id="material"></select></label><label>明暗<select id="brightness"></select></label>
+<label>资格<select id="eligibility"><option value="all">全部资格</option><option value="normal">常规</option><option value="conditional">条件</option><option value="archive">仅归档</option></select></label>
+</div><p id="total" aria-live="polite"></p></header>
+<main><div id="list"></div><footer><button id="prev" aria-label="上一页">←</button><span id="page"></span><button id="next" aria-label="下一页">→</button></footer></main>
+<script>
+const frames=__FRAMES__;
+const edition=__EDITION__;
+const $=id=>document.getElementById(id);
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const values=(f,axis)=>({viewpoint:[f.classification.viewpoint],scene:[f.review.scene_type],time:[f.classification.time.category],material:f.review.materials,brightness:[f.classification.brightness]}[axis]);
+const axes=['viewpoint','scene','time','material','brightness'];
+$('edition').textContent=edition==='crop-only'?'公开小样版 · 698 帧数据 · 无电影整帧':'本机完整版 · 84 张无损代表整帧 · 全量外置证据';
+for(const axis of axes){$(axis).innerHTML='<option value="all">全部</option>'+[...new Set(frames.flatMap(f=>values(f,axis)))].sort().map(v=>`<option>${esc(v)}</option>`).join('')}
+let page=0,filtered=[];
+document.addEventListener('error',event=>{const image=event.target;if(image instanceof HTMLImageElement){const state=document.createElement('p');state.className='empty';state.textContent='视觉证据缺失 · 不可批准';image.replaceWith(state)}},true);
+function plots(article,f){
+  const rows=[['L* 0–100',f.L_histogram_100,'#434f49'],...f.RGB_histograms_256.map((h,i)=>[['R 0–255','G 0–255','B 0–255'][i],h,['#ba4d4b','#378362','#526bae'][i]])];
+  article.querySelectorAll('canvas').forEach((canvas,i)=>{const ctx=canvas.getContext('2d'),[name,h,color]=rows[i],peak=Math.max(...h);ctx.fillStyle='#f3f5f4';ctx.fillRect(0,0,300,100);ctx.fillStyle='#222';ctx.font='12px sans-serif';ctx.fillText(name+'  max='+peak,8,15);ctx.fillStyle=color;h.forEach((v,j)=>ctx.fillRect(8+j*284/h.length,88-v/peak*65,Math.max(1,284/h.length),v/peak*65));});
+}
+function card(f){
+  const asset=f.display_asset,scope=f.evidence_scope==='native-crop'?'原像素色卡小样图集':'代表整帧';
+  return `<article data-scene="${f.scene}">
+    ${asset?`<a href="../${esc(asset)}"><img class="${f.evidence_scope==='native-crop'?'native-crop':''}" loading="lazy" src="../${esc(asset)}" alt="${scope} ${f.scene}"></a>`:''}
+    <div class="body"><h2>${String(f.scene).padStart(3,'0')} · ${esc(f.review.scene_type)}</h2>
+    <p class="meta">${esc(f.classification.viewpoint)} · ${esc(f.classification.time.category)} · ${esc(f.classification.brightness)} · ${f.active?(f.review.gates.length?'条件':'常规'):'仅归档'}<br>${esc(f.review.materials.join(', '))}</p>
+    <p>${esc(f.review.observation)}</p>
+    <div class="palette">${f.palette.map(s=>`<div class="swatch" style="background:${s.hex};flex:${s.share}" title="${s.hex} · ${(s.share*100).toFixed(4)}% · ${s.id} · xy ${s.xy}"></div>`).join('')}</div>
+    <div class="plots">${[0,1,2,3].map(()=>'<canvas width="300" height="100" aria-label="原帧采样像素直方图"></canvas>').join('')}</div>
+    <details><summary>纹理特征面积与边界</summary><p class="meta">有效 ROI 已测 ${100*f.texture_summary.coverage}%；下表为块面积，语义印刷层全帧覆盖仍未测。</p><table><tr><th>特征</th><th>比例</th></tr>${Object.entries(f.texture_summary.forms).map(([k,v])=>`<tr><td>${esc(k)}</td><td>${(v.share*100).toFixed(4)}%</td></tr>`).join('')}</table></details>
+    ${(f.texture_crops||[]).length?`<details><summary>已接受局部候选小样 · ${f.texture_crops.length}</summary><div class="texture-links">${f.texture_crops.map(c=>`<a href="../${esc(c.asset)}" title="原图区域 ${c.rect}; 保存上下文 ${c.storage_rect}">${esc(c.id)} · ${esc(c.class)}</a>`).join('')}</div></details>`:''}
+    <p><a href="../${f.text_record}">逐帧色卡、比例与学习档案</a></p></div></article>`;
+}
+function render(){
+  const slice=filtered.slice(page*12,page*12+12);
+  $('list').innerHTML=slice.map(card).join('')||'<p class="empty">当前条件无记录。</p>';
+  slice.forEach(f=>plots(document.querySelector(`[data-scene="${f.scene}"]`),f));
+  $('total').textContent=`${filtered.length} / ${frames.length} 帧 · 代表场景 ${frames.filter(f=>f.is_representative).length} 个`;
+  $('page').textContent=`${filtered.length?page+1:0} / ${Math.ceil(filtered.length/12)}`;
+  $('prev').disabled=page===0;$('next').disabled=(page+1)*12>=filtered.length;
+}
+function filter(){
+  const q=$('search').value.trim().toLowerCase(),storage=$('storage').value,elig=$('eligibility').value;
+  filtered=frames.filter(f=>(storage==='all'||(storage==='selected'?f.is_representative:!f.is_representative))&&axes.every(a=>$(a).value==='all'||values(f,a).includes($(a).value))&&(elig==='all'||(elig==='archive'?!f.active:elig==='normal'?f.active&&!f.review.gates.length:f.active&&f.review.gates.length))&&(!q||JSON.stringify([f.scene,f.review,f.classification,f.world]).toLowerCase().includes(q)));
+  page=0;render();
+}
+for(const id of [...axes,'storage','eligibility'])$(id).addEventListener('change',filter);
+$('search').addEventListener('input',filter);$('prev').onclick=()=>{page--;render()};$('next').onclick=()=>{page++;render()};filter();
+</script></html>

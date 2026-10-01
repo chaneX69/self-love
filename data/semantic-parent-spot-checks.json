@@ -1,0 +1,291 @@
+{
+  "scope": "Independent parent spot-check of local overlay sheets, not second review of every source frame or semantic ground truth.",
+  "checks": [
+    {
+      "batch": "batch-301-400",
+      "id": "353-board-copies",
+      "decision": "candidate_supported",
+      "basis": "Displaced cyan/purple right-angle contour copies are visible against neutral board tone; local color trace is confined to one contour band, not the full board.",
+      "viewed_sheet_sha256": "36dc74532487ee81bc2574fa6cbc2a0b6be113e6bac4861ef66ed551987fa8da",
+      "scene": 353,
+      "source_pixel_sha256": "e4c06f39045cd98aff16f5392036cbab6c394d9f985a442986f9b9edd2ce3a3c",
+      "final_usable_mask_present": true,
+      "final_mask_sha256": "4b93d4fa728625cfcf2bf9137ecd5000b192fe17839f86980ecab82d79c6f547",
+      "rect": [
+        1400,
+        280,
+        170,
+        60
+      ]
+    },
+    {
+      "batch": "batch-647-659",
+      "id": "658-doorframe-color-copies",
+      "decision": "candidate_supported",
+      "basis": "Native strip shows repeated rounded door-window contours in several displaced colors. Short crop excludes window interior; trace covers only fragments of top colored copies, not all offset ink.",
+      "viewed_sheet_sha256": "1c6bb32f6087e490440b1f9808621e8320e3a1fe3908c46283199d601136c6b3",
+      "scene": 658,
+      "source_pixel_sha256": "f21a55c1bf2102a225fa7b591eb69e3a25ee153d727428fe5f8a671573659a66",
+      "final_usable_mask_present": true,
+      "final_mask_sha256": "1311010f0da0332f10e605edd111812e1dc2d29db937205a9a5b2eb4ca069c7a",
+      "rect": [
+        2380,
+        350,
+        280,
+        60
+      ]
+    },
+    {
+      "batch": "batch-401-500",
+      "id": "455-fist-blue-copy",
+      "decision": "candidate_supported",
+      "basis": "Native context shows stepped blue silhouette outside the fist and separated scene contours. Raised chroma thresholds omit brown hand and dark ground; only one partial blue-copy trace is supported.",
+      "viewed_sheet_sha256": "780804a2da3ef2b39494c7a7dd13d1118577d9902eb2b1042030a7b0539e7840",
+      "scene": 455,
+      "source_pixel_sha256": "c7769e2f32de75d7769f4f56310ead30f5dd8a6249c3938abaf2ea3c2e26042a",
+      "final_usable_mask_present": true,
+      "final_mask_sha256": "60079adc7d9a3b89b58606ecd7564abde6618d4e483d6bbda018e7aa20d87947",
+      "rect": [
+        1140,
+        910,
+        80,
+        140
+      ]
+    },
+    {
+      "batch": "batch-301-400",
+      "id": "307-glass-dots",
+      "decision": "candidate_supported",
+      "basis": "Separated bright dots on the dark glass fade toward an untraced smooth region; mask follows local dot fragments without tracing a glass boundary.",
+      "viewed_sheet_sha256": "bb01b11757d52705d604431c3e3a0d8561b5c6fc317409a21c98a6829e9d703e",
+      "scene": 307,
+      "source_pixel_sha256": "f88434a77fed2640ca4efbb87e8e36ba4ea7022715b5f9fbfbc5aa46d5e92d96",
+      "final_usable_mask_present": true,
+      "final_mask_sha256": "433f0758000e7dd048512d34fc375d386da82ee2764da1ddc1d44cd2a25af81e",
+      "rect": [
+        1760,
+        270,
+        80,
+        160
+      ]
+    },
+    {
+      "batch": "batch-301-400",
+      "id": "308-cook-cheek",
+      "decision": "corrected_removed",
+      "basis": "Native-context recheck could not separate near-beard marks from stubble. Owner removed the proposed region and set hatching uncertain; no usable count survives.",
+      "viewed_sheet_sha256": "ac271662505db6c01ba98587480ff943f6ec40be6a20fcc4138f38f678f0093c",
+      "scene": 308,
+      "source_pixel_sha256": "65848c4142683d6fba0daa869307a39de34dc508f9990f0db866dd0438605f7f",
+      "final_usable_mask_present": false
+    },
+    {
+      "batch": "batch-301-400",
+      "id": "310-cheek-dots",
+      "decision": "corrected_reclassified_and_excluded",
+      "basis": "Owner changed cheek cells from halftone to screen_mesh, marked the grid trace ambiguous and halftone uncertain. It is excluded from usable masks and counts.",
+      "viewed_sheet_sha256": "10db49fc91b96687be3c0d50b569e7ad8c1cbf22aad6375a2832f8a73d0ec1e1",
+      "scene": 310,
+      "source_pixel_sha256": "cd17200c7c8c5cd13afe6557223d30cf3b3e186fb1507cc639b29ca250d38002",
+      "final_usable_mask_present": false
+    },
+    {
+      "batch": "batch-201-300",
+      "id": "212-gray-plane-round-dots",
+      "decision": "candidate_supported",
+      "basis": "Distinct round black dots are present. Residual encodes rings along dot boundaries, not whole filled dot interiors, so mask counts cannot stand for true dot ink area.",
+      "viewed_sheet_sha256": "efecad5d2a8977bba8cc16c6dfb1ad62c99bd28e6f7aadc7374681481e9aecff",
+      "scene": 212,
+      "source_pixel_sha256": "c538787c4a14f7d5a6ad4a0b12dfafdda8371d288734a2fcf72a99fa0962032e",
+      "final_usable_mask_present": true,
+      "final_mask_sha256": "9dbba135ab1bf06337c186fb5a17358941a2814b39d16a902ba8c05593371c20",
+      "rect": [
+        2540,
+        480,
+        130,
+        140
+      ]
+    },
+    {
+      "batch": "batch-201-300",
+      "id": "204-shadow-tile-slants",
+      "decision": "candidate_supported",
+      "basis": "Even diagonal lines occupy a uniform plane without tile seams in the crop; local screening candidate is supported.",
+      "viewed_sheet_sha256": "42ad278c4853ed3d2ef1f2c7aba424796430b4ebaa0736ef36361f08e1affe22",
+      "scene": 204,
+      "source_pixel_sha256": "b68605bde1ef4db2a682e4b58ec2914ba1ab34d86acf6ebbcc2bb5c5b64f7804",
+      "final_usable_mask_present": true,
+      "final_mask_sha256": "d7e0c2f473afbc9dfdf003c1d0f4a2706e978165a6a0132d2b7e6a68a3457a5b",
+      "rect": [
+        2330,
+        70,
+        130,
+        150
+      ]
+    },
+    {
+      "batch": "batch-201-300",
+      "id": "248-under-eye-strokes",
+      "decision": "corrected_removed",
+      "basis": "Owner confirmed eyelid/eye-bag expression contours, removed the proposed region and set hatching uncertain. No usable hatch count survives.",
+      "viewed_sheet_sha256": "dbec3a68898f14b36b7111b253cf4b386bbafaf86fb5d21407283ceca7322782",
+      "scene": 248,
+      "source_pixel_sha256": "f216b71e549c090ab08e28a2c56b7221070c39230734e89eb40caca104067604",
+      "final_usable_mask_present": false
+    },
+    {
+      "batch": "batch-1-100",
+      "id": "003-blue-background-dots",
+      "decision": "candidate_supported",
+      "basis": "Separated round light dots are visible; trace follows their small cores and rims with dark gaps. Partial trace only.",
+      "viewed_sheet_sha256": "ea7272ced92025423d665a1aafe3c5d8a87db6e186a3a9f1dbce0196d45e198b",
+      "scene": 3,
+      "source_pixel_sha256": "8cc4452f8d3cab0411ebbc199b883772f2afdd939dd331c3de6111bd9ab6cc75",
+      "final_usable_mask_present": true,
+      "final_mask_sha256": "29cf59de3c166f61fd62a85c9b680f6333870ecb0f4249a22b4691a53da7f5e7",
+      "rect": [
+        1350,
+        40,
+        240,
+        200
+      ]
+    },
+    {
+      "batch": "batch-1-100",
+      "id": "007-forearm-shading",
+      "decision": "candidate_supported",
+      "basis": "Localized diagonal dark strokes taper across forearm shading; overlay avoids broad tone fill. Fine screening versus hatching remains a visual design distinction, not a recovered production layer.",
+      "viewed_sheet_sha256": "2f1be7b22d7b1511fd6f33cdc92662f95422bb84f3d0ed4c51b7e0b01cab7fbc",
+      "scene": 7,
+      "source_pixel_sha256": "915ec84875999bf78e05e0d7f28a9cb7a4052db03678dd78465d202b04130cc8",
+      "final_usable_mask_present": true,
+      "final_mask_sha256": "931a7be6558afa58578330aeeb4a6ef654c8f4a3e02ba029eac560916b72a11d",
+      "rect": [
+        1020,
+        90,
+        110,
+        120
+      ]
+    },
+    {
+      "batch": "batch-1-100",
+      "id": "009-wall-panel-hatching",
+      "decision": "candidate_supported",
+      "basis": "Continuous fine diagonal field is screen_mesh rather than localized hatching. Saved class already reflects correction; edge remnants do not establish exhaustive ink coverage.",
+      "viewed_sheet_sha256": "bae77567cdebcb1b7e3707e7815bbc3aa96170e9b84ac21ea6f10f23614c2bb8",
+      "scene": 9,
+      "source_pixel_sha256": "9e8e6beba6e72c3eae87549d658188657285b156baba4c8c98d88e095d4e5de4",
+      "final_usable_mask_present": true,
+      "final_mask_sha256": "3ad6be055c319e2907c3eb6af61c44dfbe205b9561788dd290d00d697067d768",
+      "rect": [
+        1250,
+        500,
+        280,
+        200
+      ]
+    },
+    {
+      "batch": "batch-501-600",
+      "id": "507-board-color-copies",
+      "decision": "candidate_supported_with_band_limit",
+      "basis": "Source shows magenta/cyan boundary copies. Trace mostly follows the cyan copy in threshold-band state, not a complete two-color or whole-frame mask; zero core count must not mean absence.",
+      "viewed_sheet_sha256": "56e8d728db9d1d21d42bceec4b860d50c50d0fa37741785e85315b79b2094a2e",
+      "scene": 507,
+      "source_pixel_sha256": "bb123b0db1af725c0972c525120645068fad4623259d870f8affe9ea9f15c5ff",
+      "final_usable_mask_present": true,
+      "final_mask_sha256": "1e65f70dffbde5d349e954ab6b5b86fddaf590850ca9bfe89c07ee3333dfd8dc",
+      "rect": [
+        385,
+        400,
+        75,
+        340
+      ]
+    },
+    {
+      "batch": "batch-501-600",
+      "id": "510-forehead-hatch",
+      "decision": "candidate_supported",
+      "basis": "Localized tapered oblique forehead shadow strokes are visible; trace avoids eyebrow and hair geometry.",
+      "viewed_sheet_sha256": "5dd3131ce22b63e4f4c72adace97d66251bb7c5b41152c7684daeb9d102f113c",
+      "scene": 510,
+      "source_pixel_sha256": "262eb1ae7a9bf6215c7c417cfb8c6122219b6c75b108cdbf0c72060f1d03fa4b",
+      "final_usable_mask_present": true,
+      "final_mask_sha256": "734e186f897ac4c8305c9be27a72311a780431a0f2d9add93093f72cc8cd92a0",
+      "rect": [
+        1660,
+        310,
+        110,
+        135
+      ]
+    },
+    {
+      "batch": "batch-501-600",
+      "id": "513-wall-light-strokes",
+      "decision": "candidate_supported",
+      "basis": "Periodic light diagonals across uniform wall correspond to screening. No object boundary in the inspected patch; incomplete trace remains candidate only.",
+      "viewed_sheet_sha256": "e0c0b97dc57e34e7379c08c22870965d5288ea6120364aedd0a4b6a725e60b4e",
+      "scene": 513,
+      "source_pixel_sha256": "c52f46915f41c7be9a32164c18d9bfb40201186ee6fee1cccb5e0a49b689f922",
+      "final_usable_mask_present": true,
+      "final_mask_sha256": "43c002564ce69dc1f49f23a825371b143b2ba86310ab89aec6e7ebfc76c4e1cf",
+      "rect": [
+        2020,
+        390,
+        180,
+        230
+      ]
+    },
+    {
+      "batch": "batch-101-200",
+      "id": "102-caption-tone",
+      "decision": "candidate_supported",
+      "basis": "Small round pink/blue dots are separated on a blank cyan field. The narrow patch excludes letters and panel borders; masks trace dot fragments.",
+      "viewed_sheet_sha256": "892529b82ad25173a1811722d7aea2fccfd167b3c6e053a31293a6d7c1d13d40",
+      "scene": 102,
+      "source_pixel_sha256": "1df792605d9ec84f9da0752f2f54820634a475d3a600bc1ddca7edf5b7ea16a7",
+      "final_usable_mask_present": true,
+      "final_mask_sha256": "e36af76e69d5f4706ec316fdd7f15971b1555889e8ed0ba675f509565274b2f8",
+      "rect": [
+        1850,
+        865,
+        180,
+        20
+      ]
+    },
+    {
+      "batch": "batch-401-500",
+      "id": "405-neon-glow-slashes",
+      "decision": "candidate_supported",
+      "basis": "Short diagonal strokes fade across purple glow. Partial residual traces correspond to those strokes without selecting neon tubing or an architectural edge.",
+      "viewed_sheet_sha256": "5cd44697c7b8c0efc8eee9871f9dcf09bb32affb5b21bdad8f6a2b27e702f78b",
+      "scene": 405,
+      "source_pixel_sha256": "d809a2bafee27bb0f479f285610eb2949037458801af87adb7a7129dced62f06",
+      "final_usable_mask_present": true,
+      "final_mask_sha256": "4580a3dc56df88d7ac382b8e2c82dd338885097542ad038074bee91e8087cb21",
+      "rect": [
+        125,
+        238,
+        130,
+        60
+      ]
+    },
+    {
+      "batch": "batch-401-500",
+      "id": "408-hand-shadow-hatch",
+      "decision": "candidate_supported",
+      "basis": "Dark, directional hand-shadow strokes correspond to trace runs. The patch has no physical crease or silhouette; it does not establish exhaustive ink coverage.",
+      "viewed_sheet_sha256": "8ca5363175dbee51d3974b3869c2a47a6e8dbe628a334caf0f53268f8ab5413d",
+      "scene": 408,
+      "source_pixel_sha256": "2e02bb12036785eda31d941f132a0102fd0d122136fd1d27d18a87319ebe0cdd",
+      "final_usable_mask_present": true,
+      "final_mask_sha256": "4b23591eb07061b7b1d24740a7ef2331c4c01fadb7c399d84c3aa25672e63e4f",
+      "rect": [
+        1000,
+        420,
+        200,
+        210
+      ]
+    }
+  ],
+  "final_binding_verified": true
+}

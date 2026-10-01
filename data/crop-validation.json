@@ -1,0 +1,95 @@
+{
+  "status": "passed",
+  "frames": 698,
+  "palette_atlases": 698,
+  "palette_native_patches_checked": 22336,
+  "palette_anchor_pixels_checked": 22336,
+  "texture_crops_checked": 548,
+  "original_frames_compared": 698,
+  "external_originals_used": true,
+  "all_crop_pixel_hashes_checked": true,
+  "palette_asset_bytes": 228567914,
+  "texture_asset_bytes": 6165000,
+  "measurements_sha256": "3aa60626bc73f9d2546aea0e6a981bf2aff8ace066218c41f1ba37348d061b93",
+  "full_frame_reconstruction": false,
+  "full_frame_semantic_occupancy_complete": false,
+  "boundary": "All native crop pixels, coordinates, identities and palette anchors verified. This is not a new manual semantic review, full-frame reconstruction, cross-host image-generation test or copyright determination.",
+  "stage": "all-crops-and-independent-package-verified",
+  "full_library_recomputation": {
+    "status": "passed",
+    "frames": 698,
+    "source_hashes_verified": 698,
+    "unique_sources": 698,
+    "palettes_verified": 698,
+    "swatch_pixels_verified": 22336,
+    "histogram_arrays_recomputed": 2792,
+    "color_position_tables_recomputed": 698,
+    "derived_images_decoded_nonblank": 0,
+    "boundary": "Numerical/file validation; semantic pixel material review remains a per-photo requirement."
+  },
+  "unit_tests_passed": 87,
+  "independent_package": {
+    "status": "passed",
+    "frames": 698,
+    "palette_atlases": 698,
+    "palette_native_patches_checked": 22336,
+    "palette_anchor_pixels_checked": 22336,
+    "texture_crops_checked": 548,
+    "original_frames_compared": 0,
+    "external_originals_used": false,
+    "all_crop_pixel_hashes_checked": true,
+    "palette_asset_bytes": 228567914,
+    "texture_asset_bytes": 6165000,
+    "measurements_sha256": "3aa60626bc73f9d2546aea0e6a981bf2aff8ace066218c41f1ba37348d061b93",
+    "full_frame_reconstruction": false,
+    "full_frame_semantic_occupancy_complete": false,
+    "boundary": "All native crop pixels, coordinates, identities and palette anchors verified. This is not a new manual semantic review, full-frame reconstruction, cross-host image-generation test or copyright determination."
+  },
+  "texture_recomputation": {
+    "status": "passed",
+    "frame_category_records": 698,
+    "accepted_local_masks": 548,
+    "original_sources_checked": 0,
+    "source_recompute_requested": true,
+    "local_traces_recomputed_from_full_frames": 0,
+    "local_traces_recomputed_from_native_crops": 548,
+    "full_frame_semantic_occupancy_complete": false,
+    "scope": "Identity, counts, RLE and optional source recomputation; not semantic truth or user approval."
+  },
+  "privacy_scan": {
+    "status": "passed",
+    "files_checked": 2120,
+    "movie_references_verified": 0,
+    "declared_movie_references": 0,
+    "movie_crops_verified": 548,
+    "declared_movie_crops": 548,
+    "palette_atlases_verified": 698,
+    "declared_palette_atlases": 698,
+    "issues": [],
+    "boundary": "Manifest, full pixel hashes and common leak channels checked; Git history is not inspected; provenance and third-party rights are separate."
+  },
+  "local_markdown_links_missing": 0,
+  "common_credential_patterns_found": 0,
+  "full_frames_in_publication": 0,
+  "zip_files_in_publication": 0,
+  "user_effect_approval": "author-confirmed-current-skill; not a cross-host guarantee",
+  "copyright_permission": "not-verified; publication explicitly requested by repository owner",
+  "validated_edition": "crop-only",
+  "browser_checks": {
+    "status": "passed",
+    "viewports": [
+      {
+        "width": 1440,
+        "height": 1000
+      },
+      {
+        "width": 390,
+        "height": 844
+      }
+    ],
+    "filter_pagination_search": "passed",
+    "histogram_canvases_nonblank": true
+  },
+  "local_backup_failure_restore_tests": 7,
+  "repository_target": "https://github.com/chaneX69/self-love"
+}

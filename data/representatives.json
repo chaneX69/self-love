@@ -1,0 +1,2707 @@
+{
+  "selection_method": "curated anchors + deterministic greedy coverage; not aesthetic approval",
+  "selected": [
+    17,
+    18,
+    28,
+    30,
+    46,
+    47,
+    54,
+    55,
+    61,
+    62,
+    64,
+    80,
+    104,
+    109,
+    112,
+    113,
+    130,
+    131,
+    143,
+    147,
+    154,
+    156,
+    191,
+    196,
+    198,
+    221,
+    224,
+    233,
+    235,
+    236,
+    238,
+    256,
+    257,
+    261,
+    269,
+    279,
+    304,
+    312,
+    313,
+    322,
+    325,
+    326,
+    328,
+    330,
+    338,
+    353,
+    389,
+    393,
+    399,
+    400,
+    402,
+    403,
+    407,
+    421,
+    434,
+    450,
+    455,
+    461,
+    467,
+    471,
+    472,
+    486,
+    492,
+    494,
+    498,
+    536,
+    561,
+    585,
+    594,
+    603,
+    608,
+    625,
+    658,
+    659,
+    663,
+    670,
+    679,
+    681,
+    684,
+    688,
+    693,
+    696,
+    697,
+    698
+  ],
+  "curated": [
+    18,
+    46,
+    61,
+    80,
+    104,
+    130,
+    143,
+    154,
+    191,
+    196,
+    221,
+    233,
+    236,
+    269,
+    313,
+    325,
+    353,
+    389,
+    393,
+    399,
+    403,
+    407,
+    450,
+    455,
+    461,
+    467,
+    486,
+    494,
+    536,
+    561,
+    585,
+    594,
+    603,
+    608,
+    625,
+    658,
+    663,
+    670,
+    681,
+    684,
+    688,
+    693,
+    696,
+    697,
+    698
+  ],
+  "count": 84,
+  "active_tokens": 235,
+  "covered_tokens": 235,
+  "uncovered": [],
+  "coverage": {
+    "angle:graphic-nonphysical": {
+      "all_count": 24,
+      "selected": [
+        47,
+        55,
+        154,
+        498,
+        625
+      ]
+    },
+    "angle:high-angle": {
+      "all_count": 113,
+      "selected": [
+        104,
+        147,
+        221,
+        279,
+        322,
+        325,
+        328,
+        338,
+        407,
+        434,
+        472,
+        594,
+        679,
+        693
+      ]
+    },
+    "angle:low-angle": {
+      "all_count": 138,
+      "selected": [
+        28,
+        62,
+        112,
+        113,
+        131,
+        196,
+        389,
+        393,
+        399,
+        400,
+        402,
+        403,
+        494,
+        608,
+        659
+      ]
+    },
+    "angle:mixed-panels": {
+      "all_count": 6,
+      "selected": [
+        156,
+        261
+      ]
+    },
+    "angle:near-level": {
+      "all_count": 342,
+      "selected": [
+        17,
+        18,
+        30,
+        46,
+        54,
+        61,
+        64,
+        80,
+        109,
+        130,
+        191,
+        224,
+        233,
+        235,
+        236,
+        257,
+        269,
+        304,
+        312,
+        313,
+        330,
+        353,
+        421,
+        450,
+        455,
+        461,
+        467,
+        486,
+        536,
+        585,
+        603,
+        658,
+        663,
+        670,
+        684,
+        688,
+        696
+      ]
+    },
+    "angle:overhead": {
+      "all_count": 27,
+      "selected": [
+        198,
+        256,
+        326,
+        471,
+        681,
+        697,
+        698
+      ]
+    },
+    "angle:rolled-or-dutch": {
+      "all_count": 32,
+      "selected": [
+        143,
+        238,
+        492,
+        561
+      ]
+    },
+    "brightness:dark": {
+      "all_count": 224,
+      "selected": [
+        17,
+        30,
+        47,
+        54,
+        61,
+        109,
+        112,
+        113,
+        131,
+        147,
+        191,
+        221,
+        256,
+        261,
+        304,
+        312,
+        313,
+        393,
+        399,
+        400,
+        402,
+        434,
+        450,
+        461,
+        492,
+        494,
+        585,
+        658,
+        663,
+        670,
+        688,
+        697
+      ]
+    },
+    "brightness:light": {
+      "all_count": 28,
+      "selected": [
+        28,
+        62
+      ]
+    },
+    "brightness:middle": {
+      "all_count": 173,
+      "selected": [
+        55,
+        64,
+        80,
+        233,
+        236,
+        238,
+        322,
+        325,
+        330,
+        338,
+        353,
+        389,
+        407,
+        486,
+        498,
+        603,
+        608,
+        679,
+        681,
+        684,
+        693
+      ]
+    },
+    "brightness:very-dark": {
+      "all_count": 251,
+      "selected": [
+        18,
+        46,
+        104,
+        130,
+        143,
+        154,
+        156,
+        196,
+        198,
+        224,
+        235,
+        257,
+        269,
+        279,
+        326,
+        328,
+        403,
+        421,
+        455,
+        467,
+        471,
+        472,
+        536,
+        561,
+        594,
+        659,
+        696,
+        698
+      ]
+    },
+    "brightness:very-light": {
+      "all_count": 6,
+      "selected": [
+        625
+      ]
+    },
+    "framing:close-up": {
+      "all_count": 69,
+      "selected": [
+        80,
+        304,
+        328,
+        472,
+        498,
+        670,
+        688
+      ]
+    },
+    "framing:detail": {
+      "all_count": 43,
+      "selected": [
+        18,
+        47,
+        54,
+        62,
+        104,
+        154,
+        338,
+        434,
+        471,
+        536,
+        681
+      ]
+    },
+    "framing:environment-wide": {
+      "all_count": 271,
+      "selected": [
+        30,
+        113,
+        130,
+        131,
+        143,
+        147,
+        198,
+        221,
+        235,
+        236,
+        257,
+        312,
+        313,
+        322,
+        325,
+        326,
+        389,
+        393,
+        407,
+        421,
+        461,
+        486,
+        561,
+        585,
+        594,
+        658,
+        659,
+        663,
+        679,
+        684,
+        693
+      ]
+    },
+    "framing:full-body": {
+      "all_count": 53,
+      "selected": [
+        61,
+        112,
+        196,
+        224,
+        492,
+        625
+      ]
+    },
+    "framing:graphic-or-multipanel": {
+      "all_count": 15,
+      "selected": [
+        55,
+        156,
+        261
+      ]
+    },
+    "framing:medium": {
+      "all_count": 231,
+      "selected": [
+        17,
+        28,
+        46,
+        64,
+        109,
+        191,
+        233,
+        238,
+        256,
+        269,
+        279,
+        330,
+        353,
+        399,
+        400,
+        402,
+        403,
+        450,
+        455,
+        467,
+        494,
+        603,
+        608,
+        696,
+        697,
+        698
+      ]
+    },
+    "gate:caption": {
+      "all_count": 16,
+      "selected": [
+        61,
+        131
+      ]
+    },
+    "gate:energy": {
+      "all_count": 45,
+      "selected": [
+        147,
+        224,
+        659
+      ]
+    },
+    "gate:glitch": {
+      "all_count": 19,
+      "selected": [
+        143,
+        238,
+        330,
+        353,
+        658
+      ]
+    },
+    "gate:impact": {
+      "all_count": 18,
+      "selected": [
+        154,
+        498,
+        625
+      ]
+    },
+    "gate:invisibility": {
+      "all_count": 9,
+      "selected": [
+        338
+      ]
+    },
+    "gate:motion": {
+      "all_count": 41,
+      "selected": [
+        47,
+        256,
+        492
+      ]
+    },
+    "gate:panel": {
+      "all_count": 9,
+      "selected": [
+        55,
+        156,
+        261
+      ]
+    },
+    "gate:reflection": {
+      "all_count": 9,
+      "selected": [
+        18,
+        191,
+        325,
+        450,
+        467,
+        494
+      ]
+    },
+    "gate:secondary-image": {
+      "all_count": 15,
+      "selected": [
+        54,
+        330,
+        681,
+        684
+      ]
+    },
+    "gate:sense": {
+      "all_count": 26,
+      "selected": [
+        109,
+        113,
+        130,
+        269
+      ]
+    },
+    "gate:strong-separation": {
+      "all_count": 9,
+      "selected": [
+        80,
+        455
+      ]
+    },
+    "light:cool-interior": {
+      "all_count": 87,
+      "selected": [
+        30,
+        104,
+        112,
+        130,
+        191,
+        198,
+        235,
+        279,
+        338,
+        450,
+        471,
+        585,
+        698
+      ]
+    },
+    "light:dark-interior": {
+      "all_count": 25,
+      "selected": [
+        326,
+        328,
+        455,
+        472
+      ]
+    },
+    "light:dusk": {
+      "all_count": 28,
+      "selected": [
+        402,
+        421,
+        434,
+        693
+      ]
+    },
+    "light:event-light": {
+      "all_count": 61,
+      "selected": [
+        143,
+        147,
+        156,
+        224,
+        238,
+        353,
+        658,
+        659
+      ]
+    },
+    "light:graphic-field": {
+      "all_count": 42,
+      "selected": [
+        47,
+        55,
+        80,
+        109,
+        113,
+        154,
+        498,
+        625
+      ]
+    },
+    "light:interior-mixed": {
+      "all_count": 71,
+      "selected": [
+        46,
+        54,
+        131,
+        269,
+        313,
+        330,
+        536,
+        603,
+        608,
+        697
+      ]
+    },
+    "light:neutral-day": {
+      "all_count": 90,
+      "selected": [
+        61,
+        62,
+        64,
+        196,
+        233,
+        304,
+        322,
+        325,
+        389,
+        399,
+        492,
+        494
+      ]
+    },
+    "light:night-mixed": {
+      "all_count": 161,
+      "selected": [
+        221,
+        256,
+        257,
+        261,
+        393,
+        403,
+        461,
+        467,
+        561,
+        594,
+        663,
+        670,
+        696
+      ]
+    },
+    "light:warm-day": {
+      "all_count": 117,
+      "selected": [
+        17,
+        18,
+        28,
+        236,
+        312,
+        400,
+        407,
+        486,
+        679,
+        681,
+        684,
+        688
+      ]
+    },
+    "material-light:asphalt|event-light": {
+      "all_count": 7,
+      "selected": [
+        143
+      ]
+    },
+    "material-light:asphalt|neutral-day": {
+      "all_count": 14,
+      "selected": [
+        322
+      ]
+    },
+    "material-light:asphalt|night-mixed": {
+      "all_count": 70,
+      "selected": [
+        461,
+        663,
+        670
+      ]
+    },
+    "material-light:asphalt|warm-day": {
+      "all_count": 11,
+      "selected": [
+        688
+      ]
+    },
+    "material-light:brick|cool-interior": {
+      "all_count": 1,
+      "selected": [
+        235
+      ]
+    },
+    "material-light:brick|dark-interior": {
+      "all_count": 5,
+      "selected": [
+        472
+      ]
+    },
+    "material-light:brick|dusk": {
+      "all_count": 8,
+      "selected": [
+        693
+      ]
+    },
+    "material-light:brick|event-light": {
+      "all_count": 8,
+      "selected": [
+        143
+      ]
+    },
+    "material-light:brick|graphic-field": {
+      "all_count": 2,
+      "selected": [
+        154
+      ]
+    },
+    "material-light:brick|interior-mixed": {
+      "all_count": 9,
+      "selected": [
+        46
+      ]
+    },
+    "material-light:brick|neutral-day": {
+      "all_count": 31,
+      "selected": [
+        196,
+        233
+      ]
+    },
+    "material-light:brick|night-mixed": {
+      "all_count": 76,
+      "selected": [
+        221,
+        461,
+        663,
+        670
+      ]
+    },
+    "material-light:brick|warm-day": {
+      "all_count": 16,
+      "selected": [
+        684,
+        688
+      ]
+    },
+    "material-light:ceramic|cool-interior": {
+      "all_count": 2,
+      "selected": [
+        191
+      ]
+    },
+    "material-light:ceramic|interior-mixed": {
+      "all_count": 11,
+      "selected": [
+        603,
+        608
+      ]
+    },
+    "material-light:ceramic|neutral-day": {
+      "all_count": 1,
+      "selected": [
+        233
+      ]
+    },
+    "material-light:fabric|cool-interior": {
+      "all_count": 84,
+      "selected": [
+        30,
+        104,
+        112,
+        130,
+        191,
+        198,
+        235,
+        279,
+        338,
+        450,
+        585,
+        698
+      ]
+    },
+    "material-light:fabric|dark-interior": {
+      "all_count": 24,
+      "selected": [
+        328,
+        455,
+        472
+      ]
+    },
+    "material-light:fabric|dusk": {
+      "all_count": 22,
+      "selected": [
+        402,
+        421,
+        693
+      ]
+    },
+    "material-light:fabric|event-light": {
+      "all_count": 53,
+      "selected": [
+        147,
+        156,
+        224,
+        238,
+        353,
+        658
+      ]
+    },
+    "material-light:fabric|graphic-field": {
+      "all_count": 38,
+      "selected": [
+        80,
+        109,
+        113,
+        154,
+        498,
+        625
+      ]
+    },
+    "material-light:fabric|interior-mixed": {
+      "all_count": 63,
+      "selected": [
+        46,
+        131,
+        269,
+        313,
+        603,
+        608,
+        697
+      ]
+    },
+    "material-light:fabric|neutral-day": {
+      "all_count": 74,
+      "selected": [
+        61,
+        62,
+        64,
+        196,
+        233,
+        304,
+        322,
+        399,
+        492,
+        494
+      ]
+    },
+    "material-light:fabric|night-mixed": {
+      "all_count": 140,
+      "selected": [
+        221,
+        256,
+        257,
+        261,
+        403,
+        461,
+        467,
+        561,
+        594,
+        663,
+        670,
+        696
+      ]
+    },
+    "material-light:fabric|warm-day": {
+      "all_count": 110,
+      "selected": [
+        17,
+        18,
+        28,
+        236,
+        312,
+        400,
+        407,
+        486,
+        679,
+        684,
+        688
+      ]
+    },
+    "material-light:foliage|dark-interior": {
+      "all_count": 5,
+      "selected": [
+        472
+      ]
+    },
+    "material-light:foliage|dusk": {
+      "all_count": 17,
+      "selected": [
+        421
+      ]
+    },
+    "material-light:foliage|neutral-day": {
+      "all_count": 4,
+      "selected": [
+        492
+      ]
+    },
+    "material-light:foliage|night-mixed": {
+      "all_count": 9,
+      "selected": [
+        221
+      ]
+    },
+    "material-light:foliage|warm-day": {
+      "all_count": 31,
+      "selected": [
+        312,
+        407,
+        688
+      ]
+    },
+    "material-light:food|neutral-day": {
+      "all_count": 8,
+      "selected": [
+        304
+      ]
+    },
+    "material-light:glass|cool-interior": {
+      "all_count": 58,
+      "selected": [
+        104,
+        112,
+        130,
+        191,
+        338,
+        450,
+        585
+      ]
+    },
+    "material-light:glass|dark-interior": {
+      "all_count": 19,
+      "selected": [
+        328,
+        455
+      ]
+    },
+    "material-light:glass|dusk": {
+      "all_count": 27,
+      "selected": [
+        402,
+        421,
+        693
+      ]
+    },
+    "material-light:glass|event-light": {
+      "all_count": 43,
+      "selected": [
+        143,
+        147,
+        353,
+        658
+      ]
+    },
+    "material-light:glass|graphic-field": {
+      "all_count": 3,
+      "selected": [
+        113
+      ]
+    },
+    "material-light:glass|interior-mixed": {
+      "all_count": 28,
+      "selected": [
+        54,
+        313,
+        330,
+        603,
+        608
+      ]
+    },
+    "material-light:glass|neutral-day": {
+      "all_count": 63,
+      "selected": [
+        64,
+        304,
+        322,
+        325,
+        389,
+        399,
+        494
+      ]
+    },
+    "material-light:glass|night-mixed": {
+      "all_count": 135,
+      "selected": [
+        257,
+        393,
+        403,
+        461,
+        467,
+        561,
+        594,
+        663,
+        670,
+        696
+      ]
+    },
+    "material-light:glass|warm-day": {
+      "all_count": 75,
+      "selected": [
+        17,
+        18,
+        236,
+        400,
+        407,
+        486,
+        679,
+        688
+      ]
+    },
+    "material-light:hair|cool-interior": {
+      "all_count": 39,
+      "selected": [
+        130,
+        279,
+        698
+      ]
+    },
+    "material-light:hair|dark-interior": {
+      "all_count": 21,
+      "selected": [
+        455,
+        472
+      ]
+    },
+    "material-light:hair|dusk": {
+      "all_count": 17,
+      "selected": [
+        421
+      ]
+    },
+    "material-light:hair|event-light": {
+      "all_count": 23,
+      "selected": [
+        353
+      ]
+    },
+    "material-light:hair|graphic-field": {
+      "all_count": 3,
+      "selected": [
+        80
+      ]
+    },
+    "material-light:hair|interior-mixed": {
+      "all_count": 42,
+      "selected": [
+        269,
+        313,
+        330,
+        536,
+        603,
+        608,
+        697
+      ]
+    },
+    "material-light:hair|neutral-day": {
+      "all_count": 35,
+      "selected": [
+        64,
+        304
+      ]
+    },
+    "material-light:hair|night-mixed": {
+      "all_count": 19,
+      "selected": [
+        467,
+        663,
+        670
+      ]
+    },
+    "material-light:hair|warm-day": {
+      "all_count": 66,
+      "selected": [
+        407,
+        486,
+        684,
+        688
+      ]
+    },
+    "material-light:metal|cool-interior": {
+      "all_count": 65,
+      "selected": [
+        104,
+        112,
+        130,
+        191,
+        338,
+        450,
+        698
+      ]
+    },
+    "material-light:metal|dark-interior": {
+      "all_count": 18,
+      "selected": [
+        326,
+        455
+      ]
+    },
+    "material-light:metal|dusk": {
+      "all_count": 27,
+      "selected": [
+        421,
+        434,
+        693
+      ]
+    },
+    "material-light:metal|event-light": {
+      "all_count": 59,
+      "selected": [
+        143,
+        147,
+        156,
+        238,
+        353,
+        658,
+        659
+      ]
+    },
+    "material-light:metal|graphic-field": {
+      "all_count": 20,
+      "selected": [
+        109,
+        113,
+        154
+      ]
+    },
+    "material-light:metal|interior-mixed": {
+      "all_count": 41,
+      "selected": [
+        46,
+        131,
+        603,
+        608,
+        697
+      ]
+    },
+    "material-light:metal|neutral-day": {
+      "all_count": 29,
+      "selected": [
+        233,
+        304,
+        325,
+        389
+      ]
+    },
+    "material-light:metal|night-mixed": {
+      "all_count": 88,
+      "selected": [
+        257,
+        393,
+        561,
+        594
+      ]
+    },
+    "material-light:metal|warm-day": {
+      "all_count": 35,
+      "selected": [
+        312,
+        407,
+        679
+      ]
+    },
+    "material-light:painted-metal|cool-interior": {
+      "all_count": 1,
+      "selected": [
+        198
+      ]
+    },
+    "material-light:painted-metal|neutral-day": {
+      "all_count": 17,
+      "selected": [
+        62,
+        322,
+        494
+      ]
+    },
+    "material-light:painted-metal|night-mixed": {
+      "all_count": 55,
+      "selected": [
+        461,
+        467,
+        663,
+        670
+      ]
+    },
+    "material-light:painted-metal|warm-day": {
+      "all_count": 8,
+      "selected": [
+        17,
+        684
+      ]
+    },
+    "material-light:paint|cool-interior": {
+      "all_count": 24,
+      "selected": [
+        30,
+        279
+      ]
+    },
+    "material-light:paint|dark-interior": {
+      "all_count": 1,
+      "selected": [
+        326
+      ]
+    },
+    "material-light:paint|event-light": {
+      "all_count": 1,
+      "selected": [
+        238
+      ]
+    },
+    "material-light:paint|graphic-field": {
+      "all_count": 5,
+      "selected": [
+        55,
+        80
+      ]
+    },
+    "material-light:paint|interior-mixed": {
+      "all_count": 33,
+      "selected": [
+        54
+      ]
+    },
+    "material-light:paint|neutral-day": {
+      "all_count": 17,
+      "selected": [
+        64
+      ]
+    },
+    "material-light:paint|warm-day": {
+      "all_count": 51,
+      "selected": [
+        28,
+        486,
+        681,
+        684
+      ]
+    },
+    "material-light:paper|cool-interior": {
+      "all_count": 4,
+      "selected": [
+        471
+      ]
+    },
+    "material-light:paper|graphic-field": {
+      "all_count": 6,
+      "selected": [
+        55
+      ]
+    },
+    "material-light:paper|interior-mixed": {
+      "all_count": 6,
+      "selected": [
+        697
+      ]
+    },
+    "material-light:paper|neutral-day": {
+      "all_count": 9,
+      "selected": [
+        61,
+        196
+      ]
+    },
+    "material-light:paper|warm-day": {
+      "all_count": 41,
+      "selected": [
+        28,
+        681
+      ]
+    },
+    "material-light:plastic|cool-interior": {
+      "all_count": 47,
+      "selected": [
+        104,
+        235,
+        338,
+        471,
+        585,
+        698
+      ]
+    },
+    "material-light:plastic|dark-interior": {
+      "all_count": 9,
+      "selected": [
+        326,
+        472
+      ]
+    },
+    "material-light:plastic|dusk": {
+      "all_count": 1,
+      "selected": [
+        434
+      ]
+    },
+    "material-light:plastic|event-light": {
+      "all_count": 6,
+      "selected": [
+        658
+      ]
+    },
+    "material-light:plastic|graphic-field": {
+      "all_count": 2,
+      "selected": [
+        47
+      ]
+    },
+    "material-light:plastic|interior-mixed": {
+      "all_count": 28,
+      "selected": [
+        46,
+        313,
+        330
+      ]
+    },
+    "material-light:plastic|neutral-day": {
+      "all_count": 17,
+      "selected": [
+        62,
+        304
+      ]
+    },
+    "material-light:plastic|warm-day": {
+      "all_count": 19,
+      "selected": [
+        17,
+        28
+      ]
+    },
+    "material-light:screen|cool-interior": {
+      "all_count": 30,
+      "selected": [
+        104
+      ]
+    },
+    "material-light:screen|dusk": {
+      "all_count": 2,
+      "selected": [
+        402
+      ]
+    },
+    "material-light:screen|event-light": {
+      "all_count": 2,
+      "selected": [
+        147
+      ]
+    },
+    "material-light:screen|graphic-field": {
+      "all_count": 2,
+      "selected": [
+        109
+      ]
+    },
+    "material-light:screen|interior-mixed": {
+      "all_count": 4,
+      "selected": [
+        54,
+        330
+      ]
+    },
+    "material-light:screen|neutral-day": {
+      "all_count": 7,
+      "selected": [
+        61,
+        389,
+        399
+      ]
+    },
+    "material-light:screen|night-mixed": {
+      "all_count": 49,
+      "selected": [
+        393,
+        403,
+        461
+      ]
+    },
+    "material-light:screen|warm-day": {
+      "all_count": 3,
+      "selected": [
+        400
+      ]
+    },
+    "material-light:skin|cool-interior": {
+      "all_count": 81,
+      "selected": [
+        30,
+        104,
+        112,
+        130,
+        191,
+        235,
+        279,
+        338,
+        450,
+        471,
+        585,
+        698
+      ]
+    },
+    "material-light:skin|dark-interior": {
+      "all_count": 24,
+      "selected": [
+        328,
+        455,
+        472
+      ]
+    },
+    "material-light:skin|dusk": {
+      "all_count": 18,
+      "selected": [
+        421,
+        434
+      ]
+    },
+    "material-light:skin|event-light": {
+      "all_count": 28,
+      "selected": [
+        224,
+        238,
+        353,
+        658
+      ]
+    },
+    "material-light:skin|graphic-field": {
+      "all_count": 27,
+      "selected": [
+        80,
+        109,
+        113,
+        498
+      ]
+    },
+    "material-light:skin|interior-mixed": {
+      "all_count": 71,
+      "selected": [
+        46,
+        54,
+        131,
+        269,
+        313,
+        330,
+        536,
+        603,
+        608,
+        697
+      ]
+    },
+    "material-light:skin|neutral-day": {
+      "all_count": 58,
+      "selected": [
+        61,
+        64,
+        304,
+        322,
+        492,
+        494
+      ]
+    },
+    "material-light:skin|night-mixed": {
+      "all_count": 89,
+      "selected": [
+        256,
+        257,
+        261,
+        461,
+        467,
+        561,
+        663,
+        670
+      ]
+    },
+    "material-light:skin|warm-day": {
+      "all_count": 97,
+      "selected": [
+        17,
+        18,
+        28,
+        236,
+        407,
+        486,
+        681,
+        684,
+        688
+      ]
+    },
+    "material-light:sky|dusk": {
+      "all_count": 27,
+      "selected": [
+        402,
+        421,
+        693
+      ]
+    },
+    "material-light:sky|event-light": {
+      "all_count": 1,
+      "selected": [
+        659
+      ]
+    },
+    "material-light:sky|neutral-day": {
+      "all_count": 26,
+      "selected": [
+        389,
+        399,
+        492
+      ]
+    },
+    "material-light:sky|night-mixed": {
+      "all_count": 92,
+      "selected": [
+        221,
+        393,
+        403,
+        561,
+        594,
+        696
+      ]
+    },
+    "material-light:sky|warm-day": {
+      "all_count": 41,
+      "selected": [
+        236,
+        312,
+        400,
+        407,
+        679
+      ]
+    },
+    "material-light:snow|event-light": {
+      "all_count": 1,
+      "selected": [
+        224
+      ]
+    },
+    "material-light:snow|neutral-day": {
+      "all_count": 2,
+      "selected": [
+        322
+      ]
+    },
+    "material-light:snow|night-mixed": {
+      "all_count": 10,
+      "selected": [
+        221
+      ]
+    },
+    "material-light:snow|warm-day": {
+      "all_count": 16,
+      "selected": [
+        312
+      ]
+    },
+    "material-light:stone|cool-interior": {
+      "all_count": 3,
+      "selected": [
+        198
+      ]
+    },
+    "material-light:stone|dusk": {
+      "all_count": 2,
+      "selected": [
+        402
+      ]
+    },
+    "material-light:stone|event-light": {
+      "all_count": 10,
+      "selected": [
+        156,
+        224,
+        659
+      ]
+    },
+    "material-light:stone|graphic-field": {
+      "all_count": 4,
+      "selected": [
+        498
+      ]
+    },
+    "material-light:stone|interior-mixed": {
+      "all_count": 17,
+      "selected": [
+        131,
+        603,
+        608
+      ]
+    },
+    "material-light:stone|neutral-day": {
+      "all_count": 50,
+      "selected": [
+        62,
+        64,
+        196,
+        325,
+        389,
+        399,
+        492
+      ]
+    },
+    "material-light:stone|night-mixed": {
+      "all_count": 77,
+      "selected": [
+        221,
+        256,
+        393,
+        403,
+        561,
+        594,
+        663,
+        670,
+        696
+      ]
+    },
+    "material-light:stone|warm-day": {
+      "all_count": 32,
+      "selected": [
+        236,
+        312,
+        400,
+        407,
+        679
+      ]
+    },
+    "material-light:water|warm-day": {
+      "all_count": 1,
+      "selected": [
+        679
+      ]
+    },
+    "material-light:wood|cool-interior": {
+      "all_count": 14,
+      "selected": [
+        585
+      ]
+    },
+    "material-light:wood|dark-interior": {
+      "all_count": 5,
+      "selected": [
+        472
+      ]
+    },
+    "material-light:wood|dusk": {
+      "all_count": 17,
+      "selected": [
+        421
+      ]
+    },
+    "material-light:wood|interior-mixed": {
+      "all_count": 45,
+      "selected": [
+        46,
+        269,
+        603,
+        608
+      ]
+    },
+    "material-light:wood|neutral-day": {
+      "all_count": 7,
+      "selected": [
+        61,
+        492
+      ]
+    },
+    "material-light:wood|warm-day": {
+      "all_count": 45,
+      "selected": [
+        486
+      ]
+    },
+    "scene-light:city|dusk": {
+      "all_count": 9,
+      "selected": [
+        693
+      ]
+    },
+    "scene-light:city|event-light": {
+      "all_count": 9,
+      "selected": [
+        143,
+        659
+      ]
+    },
+    "scene-light:city|neutral-day": {
+      "all_count": 27,
+      "selected": [
+        389,
+        492
+      ]
+    },
+    "scene-light:city|night-mixed": {
+      "all_count": 101,
+      "selected": [
+        221,
+        393,
+        561,
+        594,
+        696
+      ]
+    },
+    "scene-light:city|warm-day": {
+      "all_count": 11,
+      "selected": [
+        236,
+        679
+      ]
+    },
+    "scene-light:classroom|cool-interior": {
+      "all_count": 1,
+      "selected": [
+        30
+      ]
+    },
+    "scene-light:classroom|warm-day": {
+      "all_count": 6,
+      "selected": [
+        28
+      ]
+    },
+    "scene-light:detail|cool-interior": {
+      "all_count": 6,
+      "selected": [
+        471
+      ]
+    },
+    "scene-light:detail|dark-interior": {
+      "all_count": 2,
+      "selected": [
+        328
+      ]
+    },
+    "scene-light:detail|dusk": {
+      "all_count": 1,
+      "selected": [
+        434
+      ]
+    },
+    "scene-light:detail|interior-mixed": {
+      "all_count": 8,
+      "selected": [
+        54,
+        536
+      ]
+    },
+    "scene-light:detail|neutral-day": {
+      "all_count": 6,
+      "selected": [
+        62
+      ]
+    },
+    "scene-light:detail|night-mixed": {
+      "all_count": 2,
+      "selected": [
+        256
+      ]
+    },
+    "scene-light:detail|warm-day": {
+      "all_count": 5,
+      "selected": [
+        681
+      ]
+    },
+    "scene-light:graphic|event-light": {
+      "all_count": 3,
+      "selected": [
+        156
+      ]
+    },
+    "scene-light:graphic|graphic-field": {
+      "all_count": 26,
+      "selected": [
+        47,
+        55,
+        154,
+        498,
+        625
+      ]
+    },
+    "scene-light:graphic|night-mixed": {
+      "all_count": 2,
+      "selected": [
+        261
+      ]
+    },
+    "scene-light:industrial|cool-interior": {
+      "all_count": 12,
+      "selected": [
+        112
+      ]
+    },
+    "scene-light:industrial|dark-interior": {
+      "all_count": 1,
+      "selected": [
+        326
+      ]
+    },
+    "scene-light:industrial|event-light": {
+      "all_count": 38,
+      "selected": [
+        147
+      ]
+    },
+    "scene-light:industrial|graphic-field": {
+      "all_count": 8,
+      "selected": [
+        109,
+        113
+      ]
+    },
+    "scene-light:industrial|interior-mixed": {
+      "all_count": 1,
+      "selected": [
+        131
+      ]
+    },
+    "scene-light:interior|cool-interior": {
+      "all_count": 43,
+      "selected": [
+        130,
+        198,
+        235,
+        338,
+        585,
+        698
+      ]
+    },
+    "scene-light:interior|dark-interior": {
+      "all_count": 9,
+      "selected": [
+        472
+      ]
+    },
+    "scene-light:interior|event-light": {
+      "all_count": 2,
+      "selected": [
+        238
+      ]
+    },
+    "scene-light:interior|interior-mixed": {
+      "all_count": 52,
+      "selected": [
+        46,
+        603,
+        608,
+        697
+      ]
+    },
+    "scene-light:interior|neutral-day": {
+      "all_count": 17,
+      "selected": [
+        61,
+        233
+      ]
+    },
+    "scene-light:interior|warm-day": {
+      "all_count": 40,
+      "selected": [
+        486
+      ]
+    },
+    "scene-light:landscape|warm-day": {
+      "all_count": 26,
+      "selected": [
+        312,
+        407
+      ]
+    },
+    "scene-light:portrait|cool-interior": {
+      "all_count": 13,
+      "selected": [
+        279
+      ]
+    },
+    "scene-light:portrait|dark-interior": {
+      "all_count": 13,
+      "selected": [
+        455
+      ]
+    },
+    "scene-light:portrait|dusk": {
+      "all_count": 1,
+      "selected": [
+        402
+      ]
+    },
+    "scene-light:portrait|event-light": {
+      "all_count": 7,
+      "selected": [
+        353
+      ]
+    },
+    "scene-light:portrait|graphic-field": {
+      "all_count": 8,
+      "selected": [
+        80
+      ]
+    },
+    "scene-light:portrait|interior-mixed": {
+      "all_count": 7,
+      "selected": [
+        269
+      ]
+    },
+    "scene-light:portrait|neutral-day": {
+      "all_count": 23,
+      "selected": [
+        64,
+        304,
+        399
+      ]
+    },
+    "scene-light:portrait|night-mixed": {
+      "all_count": 6,
+      "selected": [
+        403
+      ]
+    },
+    "scene-light:portrait|warm-day": {
+      "all_count": 5,
+      "selected": [
+        400
+      ]
+    },
+    "scene-light:reflection|cool-interior": {
+      "all_count": 4,
+      "selected": [
+        191,
+        450
+      ]
+    },
+    "scene-light:reflection|interior-mixed": {
+      "all_count": 2,
+      "selected": [
+        330
+      ]
+    },
+    "scene-light:reflection|neutral-day": {
+      "all_count": 3,
+      "selected": [
+        325,
+        494
+      ]
+    },
+    "scene-light:reflection|night-mixed": {
+      "all_count": 1,
+      "selected": [
+        467
+      ]
+    },
+    "scene-light:reflection|warm-day": {
+      "all_count": 1,
+      "selected": [
+        18
+      ]
+    },
+    "scene-light:street|dusk": {
+      "all_count": 17,
+      "selected": [
+        421
+      ]
+    },
+    "scene-light:street|event-light": {
+      "all_count": 1,
+      "selected": [
+        224
+      ]
+    },
+    "scene-light:street|neutral-day": {
+      "all_count": 14,
+      "selected": [
+        196,
+        322
+      ]
+    },
+    "scene-light:street|night-mixed": {
+      "all_count": 47,
+      "selected": [
+        461,
+        663,
+        670
+      ]
+    },
+    "scene-light:street|warm-day": {
+      "all_count": 12,
+      "selected": [
+        684,
+        688
+      ]
+    },
+    "scene-light:vehicle|cool-interior": {
+      "all_count": 8,
+      "selected": [
+        104
+      ]
+    },
+    "scene-light:vehicle|event-light": {
+      "all_count": 1,
+      "selected": [
+        658
+      ]
+    },
+    "scene-light:vehicle|interior-mixed": {
+      "all_count": 1,
+      "selected": [
+        313
+      ]
+    },
+    "scene-light:vehicle|night-mixed": {
+      "all_count": 2,
+      "selected": [
+        257
+      ]
+    },
+    "scene-light:vehicle|warm-day": {
+      "all_count": 11,
+      "selected": [
+        17
+      ]
+    },
+    "scene:city": {
+      "all_count": 157,
+      "selected": [
+        143,
+        221,
+        236,
+        389,
+        393,
+        492,
+        561,
+        594,
+        659,
+        679,
+        693,
+        696
+      ]
+    },
+    "scene:classroom": {
+      "all_count": 7,
+      "selected": [
+        28,
+        30
+      ]
+    },
+    "scene:detail": {
+      "all_count": 30,
+      "selected": [
+        54,
+        62,
+        256,
+        328,
+        434,
+        471,
+        536,
+        681
+      ]
+    },
+    "scene:graphic": {
+      "all_count": 31,
+      "selected": [
+        47,
+        55,
+        154,
+        156,
+        261,
+        498,
+        625
+      ]
+    },
+    "scene:industrial": {
+      "all_count": 60,
+      "selected": [
+        109,
+        112,
+        113,
+        131,
+        147,
+        326
+      ]
+    },
+    "scene:interior": {
+      "all_count": 163,
+      "selected": [
+        46,
+        61,
+        130,
+        198,
+        233,
+        235,
+        238,
+        338,
+        472,
+        486,
+        585,
+        603,
+        608,
+        697,
+        698
+      ]
+    },
+    "scene:landscape": {
+      "all_count": 26,
+      "selected": [
+        312,
+        407
+      ]
+    },
+    "scene:portrait": {
+      "all_count": 83,
+      "selected": [
+        64,
+        80,
+        269,
+        279,
+        304,
+        353,
+        399,
+        400,
+        402,
+        403,
+        455
+      ]
+    },
+    "scene:reflection": {
+      "all_count": 11,
+      "selected": [
+        18,
+        191,
+        325,
+        330,
+        450,
+        467,
+        494
+      ]
+    },
+    "scene:street": {
+      "all_count": 91,
+      "selected": [
+        196,
+        224,
+        322,
+        421,
+        461,
+        663,
+        670,
+        684,
+        688
+      ]
+    },
+    "scene:vehicle": {
+      "all_count": 23,
+      "selected": [
+        17,
+        104,
+        257,
+        313,
+        658
+      ]
+    },
+    "time:daylight-time-unspecified": {
+      "all_count": 204,
+      "selected": [
+        17,
+        18,
+        28,
+        61,
+        62,
+        64,
+        196,
+        233,
+        304,
+        312,
+        322,
+        325,
+        389,
+        399,
+        400,
+        407,
+        486,
+        492,
+        494,
+        679,
+        681,
+        684,
+        688
+      ]
+    },
+    "time:event-time-unknown": {
+      "all_count": 61,
+      "selected": [
+        143,
+        147,
+        156,
+        224,
+        238,
+        353,
+        658,
+        659
+      ]
+    },
+    "time:graphic-no-physical-time": {
+      "all_count": 42,
+      "selected": [
+        47,
+        55,
+        80,
+        109,
+        113,
+        154,
+        498,
+        625
+      ]
+    },
+    "time:interior-time-unknown": {
+      "all_count": 183,
+      "selected": [
+        30,
+        46,
+        54,
+        104,
+        112,
+        130,
+        131,
+        191,
+        198,
+        235,
+        269,
+        279,
+        313,
+        326,
+        328,
+        330,
+        338,
+        450,
+        455,
+        471,
+        472,
+        536,
+        585,
+        603,
+        608,
+        697,
+        698
+      ]
+    },
+    "time:low-sun-time-unspecified": {
+      "all_count": 3,
+      "selected": [
+        236
+      ]
+    },
+    "time:night-appearance": {
+      "all_count": 161,
+      "selected": [
+        221,
+        256,
+        257,
+        261,
+        393,
+        403,
+        461,
+        467,
+        561,
+        594,
+        663,
+        670,
+        696
+      ]
+    },
+    "time:twilight-appearance": {
+      "all_count": 28,
+      "selected": [
+        402,
+        421,
+        434,
+        693
+      ]
+    },
+    "world:miles-home": {
+      "all_count": 667,
+      "selected": [
+        17,
+        18,
+        28,
+        30,
+        46,
+        47,
+        54,
+        55,
+        61,
+        62,
+        64,
+        80,
+        104,
+        109,
+        112,
+        113,
+        130,
+        131,
+        143,
+        147,
+        154,
+        156,
+        191,
+        196,
+        198,
+        221,
+        224,
+        256,
+        257,
+        261,
+        269,
+        279,
+        304,
+        312,
+        313,
+        322,
+        325,
+        326,
+        328,
+        330,
+        338,
+        353,
+        389,
+        393,
+        399,
+        400,
+        402,
+        403,
+        407,
+        421,
+        434,
+        450,
+        455,
+        461,
+        467,
+        471,
+        472,
+        486,
+        492,
+        494,
+        498,
+        536,
+        561,
+        585,
+        594,
+        603,
+        608,
+        625,
+        658,
+        659,
+        663,
+        670,
+        679,
+        681,
+        684,
+        693,
+        696,
+        697,
+        698
+      ]
+    },
+    "world:peter-b-home": {
+      "all_count": 12,
+      "selected": [
+        233,
+        235,
+        236,
+        238
+      ]
+    },
+    "world:peter-b-native": {
+      "all_count": 3,
+      "selected": [
+        688
+      ]
+    }
+  },
+  "reasons": {
+    "130": [
+      "curated mechanism or paired-light evidence"
+    ],
+    "389": [
+      "curated mechanism or paired-light evidence"
+    ],
+    "393": [
+      "curated mechanism or paired-light evidence"
+    ],
+    "269": [
+      "curated mechanism or paired-light evidence"
+    ],
+    "143": [
+      "curated mechanism or paired-light evidence"
+    ],
+    "399": [
+      "curated mechanism or paired-light evidence"
+    ],
+    "18": [
+      "curated mechanism or paired-light evidence"
+    ],
+    "403": [
+      "curated mechanism or paired-light evidence"
+    ],
+    "658": [
+      "curated mechanism or paired-light evidence"
+    ],
+    "407": [
+      "curated mechanism or paired-light evidence"
+    ],
+    "536": [
+      "curated mechanism or paired-light evidence"
+    ],
+    "663": [
+      "curated mechanism or paired-light evidence"
+    ],
+    "154": [
+      "curated mechanism or paired-light evidence"
+    ],
+    "670": [
+      "curated mechanism or paired-light evidence"
+    ],
+    "681": [
+      "curated mechanism or paired-light evidence"
+    ],
+    "684": [
+      "curated mechanism or paired-light evidence"
+    ],
+    "46": [
+      "curated mechanism or paired-light evidence"
+    ],
+    "688": [
+      "curated mechanism or paired-light evidence"
+    ],
+    "561": [
+      "curated mechanism or paired-light evidence"
+    ],
+    "693": [
+      "curated mechanism or paired-light evidence"
+    ],
+    "696": [
+      "curated mechanism or paired-light evidence"
+    ],
+    "313": [
+      "curated mechanism or paired-light evidence"
+    ],
+    "697": [
+      "curated mechanism or paired-light evidence"
+    ],
+    "698": [
+      "curated mechanism or paired-light evidence"
+    ],
+    "61": [
+      "curated mechanism or paired-light evidence"
+    ],
+    "191": [
+      "curated mechanism or paired-light evidence"
+    ],
+    "450": [
+      "curated mechanism or paired-light evidence"
+    ],
+    "196": [
+      "curated mechanism or paired-light evidence"
+    ],
+    "325": [
+      "curated mechanism or paired-light evidence"
+    ],
+    "455": [
+      "curated mechanism or paired-light evidence"
+    ],
+    "585": [
+      "curated mechanism or paired-light evidence"
+    ],
+    "461": [
+      "curated mechanism or paired-light evidence"
+    ],
+    "80": [
+      "curated mechanism or paired-light evidence"
+    ],
+    "594": [
+      "curated mechanism or paired-light evidence"
+    ],
+    "467": [
+      "curated mechanism or paired-light evidence"
+    ],
+    "603": [
+      "curated mechanism or paired-light evidence"
+    ],
+    "221": [
+      "curated mechanism or paired-light evidence"
+    ],
+    "608": [
+      "curated mechanism or paired-light evidence"
+    ],
+    "353": [
+      "curated mechanism or paired-light evidence"
+    ],
+    "486": [
+      "curated mechanism or paired-light evidence"
+    ],
+    "104": [
+      "curated mechanism or paired-light evidence"
+    ],
+    "233": [
+      "curated mechanism or paired-light evidence"
+    ],
+    "236": [
+      "curated mechanism or paired-light evidence"
+    ],
+    "494": [
+      "curated mechanism or paired-light evidence"
+    ],
+    "625": [
+      "curated mechanism or paired-light evidence"
+    ],
+    "421": [
+      "material-light:foliage|dusk",
+      "material-light:hair|dusk",
+      "material-light:skin|dusk",
+      "material-light:wood|dusk",
+      "scene-light:street|dusk"
+    ],
+    "472": [
+      "material-light:brick|dark-interior",
+      "material-light:foliage|dark-interior",
+      "material-light:plastic|dark-interior",
+      "material-light:wood|dark-interior",
+      "scene-light:interior|dark-interior"
+    ],
+    "156": [
+      "angle:mixed-panels",
+      "framing:graphic-or-multipanel",
+      "gate:panel",
+      "material-light:stone|event-light",
+      "scene-light:graphic|event-light"
+    ],
+    "28": [
+      "brightness:light",
+      "material-light:plastic|warm-day",
+      "scene-light:classroom|warm-day",
+      "scene:classroom"
+    ],
+    "147": [
+      "gate:energy",
+      "material-light:screen|event-light",
+      "scene-light:industrial|event-light",
+      "scene:industrial"
+    ],
+    "304": [
+      "material-light:food|neutral-day",
+      "material-light:hair|neutral-day",
+      "material-light:plastic|neutral-day"
+    ],
+    "402": [
+      "material-light:screen|dusk",
+      "material-light:stone|dusk",
+      "scene-light:portrait|dusk"
+    ],
+    "30": [
+      "material-light:paint|cool-interior",
+      "scene-light:classroom|cool-interior"
+    ],
+    "198": [
+      "material-light:painted-metal|cool-interior",
+      "material-light:stone|cool-interior"
+    ],
+    "322": [
+      "material-light:asphalt|neutral-day",
+      "material-light:snow|neutral-day"
+    ],
+    "326": [
+      "material-light:paint|dark-interior",
+      "scene-light:industrial|dark-interior"
+    ],
+    "400": [
+      "material-light:screen|warm-day",
+      "scene-light:portrait|warm-day"
+    ],
+    "434": [
+      "material-light:plastic|dusk",
+      "scene-light:detail|dusk"
+    ],
+    "471": [
+      "material-light:paper|cool-interior",
+      "scene-light:detail|cool-interior"
+    ],
+    "47": [
+      "gate:motion",
+      "material-light:plastic|graphic-field"
+    ],
+    "54": [
+      "material-light:paint|interior-mixed",
+      "material-light:screen|interior-mixed"
+    ],
+    "109": [
+      "material-light:screen|graphic-field",
+      "scene-light:industrial|graphic-field"
+    ],
+    "224": [
+      "material-light:snow|event-light",
+      "scene-light:street|event-light"
+    ],
+    "238": [
+      "material-light:paint|event-light",
+      "scene-light:interior|event-light"
+    ],
+    "17": [
+      "scene-light:vehicle|warm-day"
+    ],
+    "62": [
+      "scene-light:detail|neutral-day"
+    ],
+    "64": [
+      "material-light:paint|neutral-day"
+    ],
+    "112": [
+      "scene-light:industrial|cool-interior"
+    ],
+    "235": [
+      "material-light:brick|cool-interior"
+    ],
+    "257": [
+      "scene-light:vehicle|night-mixed"
+    ],
+    "279": [
+      "scene-light:portrait|cool-interior"
+    ],
+    "312": [
+      "material-light:snow|warm-day"
+    ],
+    "328": [
+      "scene-light:detail|dark-interior"
+    ],
+    "679": [
+      "material-light:water|warm-day"
+    ],
+    "55": [
+      "material-light:paper|graphic-field"
+    ],
+    "113": [
+      "material-light:glass|graphic-field"
+    ],
+    "131": [
+      "scene-light:industrial|interior-mixed"
+    ],
+    "256": [
+      "scene-light:detail|night-mixed"
+    ],
+    "261": [
+      "scene-light:graphic|night-mixed"
+    ],
+    "330": [
+      "scene-light:reflection|interior-mixed"
+    ],
+    "338": [
+      "gate:invisibility"
+    ],
+    "492": [
+      "material-light:foliage|neutral-day"
+    ],
+    "498": [
+      "material-light:stone|graphic-field"
+    ],
+    "659": [
+      "material-light:sky|event-light"
+    ]
+  },
+  "archive_only_frames": "Text/data only; never promoted to representative or mapping eligibility",
+  "limits": "Covers observed axis categories and scene-light/material-light pairs, not every 5-way combination or exact visual equivalence."
+}

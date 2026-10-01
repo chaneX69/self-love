@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>self-love 全库核对</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font:15px/1.6 system-ui,sans-serif;background:#f5f6f7;color:#142329;letter-spacing:0}header,main{max-width:1240px;margin:auto;padding:20px}header{border-bottom:1px solid #bcc5cb}h1{font-size:25px;margin:0 0 8px}h2{font-size:19px;margin:0}p{margin:7px 0}a{color:#125d85}label{display:inline-flex;gap:8px;align-items:center;margin:5px 12px 5px 0}input,select,button{font:inherit;border:1px solid #aab8be;background:white;padding:7px;border-radius:3px;max-width:100%}input{width:210px}button{cursor:pointer;min-width:44px}button:disabled{opacity:.4}.toolbar{display:flex;flex-wrap:wrap;align-items:center;gap:5px}.pager{display:flex;gap:12px;align-items:center;margin:14px 0}article{padding:24px 0;border-bottom:1px solid #b5c1c7}.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.media{width:100%;height:auto;display:block}.original{aspect-ratio:2.38;object-fit:contain;background:#172329}.meta{font-size:13px;overflow-wrap:anywhere}.tags{font-size:13px;color:#465e67}.swatches{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:6px;margin:10px 0}.chip{min-width:0}.color{height:34px;border:1px solid #7e8d9466}.chip p{font-size:11px;line-height:1.3;margin:2px 0;overflow-wrap:anywhere}summary{cursor:pointer}pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:12px}#status{font-weight:600}footer{padding:24px 0}details{margin:12px 0}.plot{margin-top:10px}.warning{color:#86422a}.empty{padding:30px 0}@media(max-width:680px){header,main{padding:14px}.grid{grid-template-columns:1fr}.swatches{grid-template-columns:repeat(4,minmax(0,1fr))}h1{font-size:22px}input{width:170px}}
+</style></head><body>
+<header><h1 id="title">self-love · 全库核对</h1><p id="totals"></p>
+<p>场景标签、原像素色卡、RGB与L*直方图。归档和条件帧完整分析，不自动获得普通照片的替色资格。</p>
+<div class="toolbar"><label>检索<input id="search" aria-label="检索" placeholder="编号、材料或观察"></label><label>资格<select id="scope" aria-label="资格"><option value="all">全部</option><option value="normal">常规候选</option><option value="conditional">条件候选</option><option value="archive">仅归档</option></select></label><label>光照<select id="light" aria-label="光照"><option value="">全部光照</option></select></label><label>场景<select id="scene" aria-label="场景"><option value="">全部场景</option></select></label></div>
+<p class="meta"><a href="frames.json">完整JSON</a> · <a href="frames.csv">CSV</a> · <a href="METHOD.md">测量边界</a> · <a href="requirements.md">要求与验收</a> · <a href="verification.json">验证记录</a></p></header>
+<main><div class="pager"><button id="previous" title="上一页" aria-label="上一页">←</button><span id="status"></span><button id="next" title="下一页" aria-label="下一页">→</button></div><div id="frames"></div><footer>色卡面积是采样颜色簇占比，不是物体面积。像素材料归属须回到原帧确认。截图不是电影母版。</footer></main>
+<script id="data" type="application/json">__LIBRARY_DATA__</script>
+<script>
+const library=JSON.parse(document.querySelector('#data').textContent);
+const all=library.frames;let filtered=all,page=0;const size=12;
+const $=id=>document.getElementById(id);
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+$('title').textContent=`self-love · ${all.length} 帧全库核对`;
+$('totals').textContent=`原件 ${all.length} · 常规 ${all.filter(f=>f.active&&!f.review.gates.length).length} · 条件 ${all.filter(f=>f.active&&f.review.gates.length).length} · 归档 ${all.filter(f=>!f.active).length}`;
+for(const [id,key] of [['light','lighting'],['scene','scene_type']]){
+  for(const v of [...new Set(all.map(f=>f.review[key]))].sort()){
+    const option=document.createElement('option');option.value=option.textContent=v;$(id).append(option);
+  }
+}
+function frameHtml(f){
+  const v=f.review;
+  const swatches=f.palette.map(s=>`<div class="chip" title="${s.id} / xy ${s.xy.join(',')} / L* ${s.lab[0].toFixed(2)}"><div class="color" style="background:${s.hex}"></div><p>${s.hex}<br>${(s.share*100).toFixed(1)}% · ${s.id}</p></div>`).join('');
+  const notes=f.evidence_notes.map(n=>`<p>${esc(n.text)}</p><p class="meta">${esc(n.source)}</p>`).join('');
+  const measurement={review:v,sample_step:f.sample_step,pixels:f.sampled_pixels,region:f.analysis_region,exclusions:f.analysis_exclusions};
+  return `<article data-frame="${f.scene}">
+    <h2>${String(f.scene).padStart(3,'0')} · ${esc(v.scene_type)} · ${f.active?(v.gates.length?'条件候选':'常规候选'):'仅归档'}</h2>
+    <p class="tags">${esc(f.world)} · ${esc(v.lighting)} · 材料候选：${esc(v.materials.join(' / '))}</p><p>${esc(v.observation)}</p>
+    <div class="grid"><div><a href="${esc(f.resolved_reference||encodeURI(f.original))}"><img class="media original" src="${f.preview}" alt="电影帧 ${f.scene}"></a>
+      <p class="meta">${f.dimensions.join(' × ')} · ${esc(f.color_management)}<br>L* P5 ${f.L_percentiles.P5.toFixed(1)} · P50 ${f.L_percentiles.P50.toFixed(1)} · P95 ${f.L_percentiles.P95.toFixed(1)}</p>
+      ${v.gates.length?`<p class="warning">条件：${esc(v.gates.join(', '))}</p>`:''}
+      <img class="media plot" src="${f.relation_chart}" alt="${f.scene} 色相明度交叉与位置分布">
+    </div><div><img class="media plot" src="${f.chart}" alt="${f.scene} RGB和明度直方图"><a href="${f.palette_card}">独立色卡图</a><div class="swatches">${swatches}</div></div></div>
+    <details><summary>来源、旧观察与测量边界</summary><p class="meta">${esc(f.original)}<br>SHA-256 ${f.sha256}</p>${notes}<pre>${esc(JSON.stringify(measurement,null,2))}</pre></details></article>`;
+}
+function render(){
+  const list=filtered.slice(page*size,(page+1)*size);
+  $('status').textContent=`${filtered.length} 张 · 第 ${page+1} / ${Math.max(1,Math.ceil(filtered.length/size))} 页`;
+  $('previous').disabled=page===0;$('next').disabled=(page+1)*size>=filtered.length;
+  $('frames').innerHTML=list.map(frameHtml).join('')||'<p class="empty">没有匹配记录。</p>';
+  window.reportState={page,filtered:filtered.map(f=>f.scene),visible:list.map(f=>f.scene)};
+}
+function filter(){
+  const q=$('search').value.trim().toLowerCase(),scope=$('scope').value,light=$('light').value,scene=$('scene').value;
+  filtered=all.filter(f=>(!q||(String(f.scene)===q||JSON.stringify(f.review).toLowerCase().includes(q)))&&(!light||f.review.lighting===light)&&(!scene||f.review.scene_type===scene)&&(scope==='all'||scope==='archive'&&!f.active||scope==='normal'&&f.active&&!f.review.gates.length||scope==='conditional'&&f.active&&f.review.gates.length));
+  page=0;render();
+}
+for(const id of ['search','scope','light','scene'])$(id).addEventListener(id==='search'?'input':'change',filter);
+$('previous').onclick=()=>{page--;render()};$('next').onclick=()=>{page++;render()};render();
+</script></body></html>

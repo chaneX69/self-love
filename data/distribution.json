@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "edition": "crop-only",
+  "full_frame_assets": 0,
+  "palette_atlases": 698,
+  "palette_native_patches": 22336,
+  "texture_crops": 548,
+  "private_archive_index_included": false,
+  "user_photos_included": false,
+  "zip_distribution": false,
+  "full_frame_context_available": false
+}

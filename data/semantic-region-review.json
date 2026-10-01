@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "status": "legacy_diagnostic_regions_not_full_frame_ground_truth; current_frame_classes_in_semantic-texture-reviews.jsonl",
+  "reviewer": "Codex visual review, not user approval or independent human annotation",
+  "review_date": "2026-09-30",
+  "ontology": "Visible print marks in the supplied final screenshot; not original film compositing passes",
+  "full_library_semantic_occupancy_complete": false,
+  "regions": [
+    {
+      "id": "450-dots-left",
+      "scene": 450,
+      "class": "halftone",
+      "rect": [716, 578, 148, 196],
+      "mode": "light",
+      "sigma": 3.0,
+      "low": 1.2,
+      "high": 2.4,
+      "material_context": "elevator door / cool reflected light",
+      "visual_review": "门面冷蓝区可辨的亮圆点阵；不是门缝。逐点候选核心与圆点落点对应，模糊边缘未当作确定像素。",
+      "restriction": "Only this inspected region; not the complete door, frame, or film"
+    },
+    {
+      "id": "670-cheek-hatch",
+      "scene": 670,
+      "class": "hatching",
+      "rect": [766, 674, 35, 105],
+      "mode": "dark",
+      "sigma": 2.0,
+      "low": 0.8,
+      "high": 1.6,
+      "material_context": "skin / shaded cheek beside blue light",
+      "visual_review": "面颊阴影中的短斜线；已缩小区域，排除蓝色照明与皮肤分界的误检。弱线大量未确定，不把未描出的像素当不存在。",
+      "restriction": "Small diagnostic patch; no full-face extrapolation"
+    },
+    {
+      "id": "688-wall-screen",
+      "scene": 688,
+      "class": "screen_mesh",
+      "rect": [600, 490, 232, 220],
+      "mode": "dark",
+      "sigma": 2.0,
+      "low": 1.0,
+      "high": 2.0,
+      "material_context": "painted wall / warm doorway light",
+      "visual_review": "墙面低对比细密周期性斜向印刷痕迹，按本技能细丝网视觉类别记录；不是官方独立丝网通道，也不能仅凭频率推断其他表面的语义。",
+      "restriction": "User-defined fine-screen appearance; physical print-process attribution unknown"
+    },
+    {
+      "id": "080-wall-offset",
+      "scene": 80,
+      "class": "color_misregistration",
+      "rect": [616, 475, 58, 148],
+      "mode": "chroma-range",
+      "sigma": 0,
+      "low": 55.0,
+      "high": 75.0,
+      "material_context": "duplicated window edge / strong graphic color separation",
+      "visual_review": "已查看整帧及原尺寸局部，青色与紫色沿同一结构分离。改用受限区域的色带阈值，替换会漏掉彩带中心的高通边缘结果。",
+      "restriction": "Conditional strong-separation frame; saturation is NOT a general misregistration detector"
+    },
+    {
+      "id": "080-wall-offset-right",
+      "scene": 80,
+      "class": "color_misregistration",
+      "rect": [800, 475, 50, 148],
+      "mode": "chroma-range",
+      "sigma": 0,
+      "low": 55.0,
+      "high": 75.0,
+      "material_context": "duplicated window edge / strong graphic color separation",
+      "visual_review": "紫色结构副本与相邻青色边同属强分色区域。宽色带内部也计入候选，不把只有彩边导数的面积当作完整错版面积。",
+      "restriction": "Blurred boundaries remain uncertain; not a universal color-offset width"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "regional-texture-forms-v1",
+  "tile_size_pixels": 128,
+  "input": "ICC-managed full-resolution sRGB; no resize, sharpening, or denoising",
+  "luma": "0.2126 R-prime + 0.7152 G-prime + 0.0722 B-prime, range 0..255; not linear luminance",
+  "fft": "Mean-removed Hann-window rFFT; 0.02..0.45 cycles/pixel; top-8 energy concentration",
+  "coherence": "Global tile gradient structure tensor, central differences",
+  "thresholds": {
+    "std_low": 3.0,
+    "directional_coherence": 0.65,
+    "periodic_peak_share": 0.22
+  },
+  "assignment_order": [
+    "low-contrast",
+    "directional-structure",
+    "periodic-structure",
+    "mixed-detail"
+  ],
+  "denominator": "Valid original-image pixels inside non-overlapping tiles with >=90% valid ROI; edge padding not counted",
+  "proportion_unit": "Area of classified tile footprints; NOT ink-pixel coverage or material area",
+  "sensitivity": "Threshold multipliers 0.8, 1.0, 1.2; min/max range is not a statistical confidence interval",
+  "semantic_boundary": "Directional forms may be hatching, hair, brick, fabric, or geometry. Periodic forms may be dots, screen mesh, windows, or aliasing. No automatic halftone/hatching/mesh/misregistration percentage claim.",
+  "semantic_occupancy": {
+    "halftone": null,
+    "hatching": null,
+    "screen_mesh": null,
+    "color_misregistration": null
+  },
+  "semantic_status": "unmeasured; needs original-pixel semantic annotation before unique-evidence purge",
+  "columns": [
+    "x",
+    "y",
+    "width",
+    "height",
+    "valid_pixels",
+    "class_index",
+    "std",
+    "coherence",
+    "fft_peak_share",
+    "dominant_cycles_per_pixel",
+    "gradient_angle_degrees"
+  ]
+}

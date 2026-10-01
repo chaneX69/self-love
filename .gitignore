@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.DS_Store
+.venv/
+archive-index.json
+outputs/
+inputs/
+work/
+backups/
+*.zip
+# Full-frame assets belong only to the local full edition, never the public crop edition.
+assets/references/
